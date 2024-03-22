@@ -1,0 +1,79 @@
+html {
+    height: 100%;
+    width: 100%;
+    text-decoration-color: white;
+  }
+  img{
+    max-width: 100vw;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 30;
+    left: 100px;
+    font-family: sans-serif;
+    z-index: 100;
+  }
+  nav a{
+    margin: 0;
+    padding: 0;
+  }
+  nav:hover {text-decoration: underline;
+    }
+
+  .title {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+  }
+  main {
+    margin: 0;
+    padding: 0px;
+  }
+  
+  .title{
+    color: red;
+  }
+
+  section{
+    position: relative;
+  }
+  
+  .feature-1 {
+    height: 100vh;
+    background-image: url("./Assets/galaxy.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .feature-1 button {
+    color: white;
+    background-color: black;                
+    }
+  
+  button:hover .feature-1 {
+  color: white;
+  }
+  
+  .feature-2 {
+    height: 100vh;
+    background-image: url("./Assets/landscape.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .feature-3 {
+    height: 100vh;
+    background-image: url("./Assets/eclipse.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  footer {
+    text-align: center;}
