@@ -11,21 +11,44 @@ html {
     padding: 0;
   }
   header {
-    color: yellow;
+    color: #7821b1d3;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     position: fixed;
     top: 30;
-    left: 100px;
+    left: 100;
     font-family: sans-serif;
     z-index: 100;
   }
-  nav a{
-    margin: 0;
-    padding: 0;
+
+  top
+ 
+  header a{
+color: whitesmoke;
+}
+
+  nav {
+  display: flex;
+  gap: 2.3rem;
+  text-transform: uppercase;
+  align-items: center;
+  top: 30;
+  right: 200;
   }
-  nav:hover {text-decoration: underline;
-    }
+
+ nav a{
+    text-decoration: none;
+    font-size: .85rem;
+    font-weight: 700;
+    position: static;
+    color: whitesmoke;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-decoration-color: #840ad6e0;
+  }
+
+  nav:hover {text-decoration-line: underline;
+  }
 
   .title {
     position: absolute;
@@ -36,9 +59,17 @@ html {
     margin: 0;
     padding: 0px;
   }
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    font-size: xx-large;
+}
   
   .title{
-    color: red;
+    color:#7821b1d3;
   }
 
   section{
@@ -50,16 +81,29 @@ html {
     background-image: url("./Assets/galaxy.jpg");
     background-size: cover;
     background-position: center center;
+    position: relative;
   }
   
-  .feature-1 button {
-    color: white;
-    background-color: black;                
+  .button-1 {
+  color: whitesmoke;
+  margin-top: 1.2rem;
+  display: inline-block;
+  max-width: 200px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .85rem;
+  letter-spacing: .1rem;
+  opacity: 2;
+  border: 3px solid #7821b1d3;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  background-image: url("./Assets/galaxy.jpg");           
     }
-  
-  button:hover .feature-1 {
-  color: white;
-  }
+
+    button:hover .feature-1 {
+    color: crimson;
+    }
   
   .feature-2 {
     height: 100vh;
@@ -67,13 +111,60 @@ html {
     background-size: cover;
     background-position: center;
   }
+
+  .button-2 {
+  color: whitesmoke;
+  margin-top: 1.2rem;
+  display: inline-block;
+  max-width: 200px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .85rem;
+  letter-spacing: .1rem;
+  opacity: 1;
+  border: 4px solid #7821b1d3;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  background-image: url("./Assets/landscape.jpg");          
+    }
   
+  button:hover .feature-2 {
+  color: rgb(3, 99, 19);
+  }
+
   .feature-3 {
     height: 100vh;
     background-image: url("./Assets/eclipse.jpg");
     background-size: cover;
     background-position: center;
   }
+
+  .button-3 {
+  color: whitesmoke;
+  margin-top: 1.2rem;
+  display: inline-block;
+  max-width: 200px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .85rem;
+  letter-spacing: .1rem;
+  opacity: 1;
+  border: 2px solid #7821b1d3;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  background-image: url("./Assets/eclipse.jpg");            
+    }
+  
+  button:hover .feature-3 {
+  color: white;
+  }
   
   footer {
-    text-align: center;}
+  background: black;
+  text-align: center;
+  color: #7821b1d3;
+  padding: 40px;
+  font-style: italic;
+}
