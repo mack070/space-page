@@ -27,6 +27,10 @@ html {
 color: whitesmoke;
 }
 
+.game{
+  color: gold;
+}
+
   nav {
   display: flex;
   gap: 2.3rem;
@@ -126,7 +130,7 @@ h3 {
   padding: 1rem 2rem;
   text-decoration: none;
   cursor: pointer;
-  background-image: url("./Assets/landscape.jpg");          
+  background-image: url("./landscape.jpg");          
     }
   
   button:hover .feature-2 {
