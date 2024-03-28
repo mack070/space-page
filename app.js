@@ -5,5 +5,11 @@
 
 const button = document.querySelector("button");
 button.addEventListener("click", function(){
-    console.log("button click")
+    console.log("button click");
 })
+
+const counterButton = document.getElementById("counter-button");
+let count = 0;
+id= counterButton.addEventListener("click", function () {
+console.log(count += 1)
+});

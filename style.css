@@ -38,6 +38,7 @@ color: whitesmoke;
   align-items: center;
   top: 30;
   right: 200;
+  cursor: pointer;
   }
 
  nav a{
@@ -51,8 +52,12 @@ color: whitesmoke;
     text-decoration-color: #840ad6e0;
   }
 
-  nav:hover {text-decoration-line: underline;
+  .nav-titles:hover {
+  text-decoration: underline;
+  color: #840ad6e0;
   }
+
+
 
   .title {
     position: absolute;
@@ -84,7 +89,7 @@ h3 {
     height: 100vh;
     background-image: url("./Assets/galaxy.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     position: relative;
   }
   
@@ -97,16 +102,17 @@ h3 {
   font-weight: 700;
   font-size: .85rem;
   letter-spacing: .1rem;
-  opacity: 2;
+  opacity: 1;
   border: 3px solid #7821b1d3;
   padding: 1rem 2rem;
   text-decoration: none;
+  background-position: 10px, 20px;
   cursor: pointer;
   background-image: url("./Assets/galaxy.jpg");           
     }
 
-    button:hover .feature-1 {
-    color: crimson;
+    .button-1:hover {
+    color: #7821b1d3;
     }
   
   .feature-2 {
@@ -129,13 +135,14 @@ h3 {
   border: 4px solid #7821b1d3;
   padding: 1rem 2rem;
   text-decoration: none;
+  background-position: 10px, 20px;
   cursor: pointer;
   background-image: url("./landscape.jpg");          
     }
   
-  button:hover .feature-2 {
-  color: rgb(3, 99, 19);
-  }
+    .button-2:hover {
+    color: #7821b1d3;
+    }
 
   .feature-3 {
     height: 100vh;
@@ -157,13 +164,45 @@ h3 {
   border: 2px solid #7821b1d3;
   padding: 1rem 2rem;
   text-decoration: none;
+  background-position: 10px, 20px;
   cursor: pointer;
   background-image: url("./Assets/eclipse.jpg");            
     }
-  
-  button:hover .feature-3 {
-  color: white;
+
+  .button-3:hover {
+  color: #7821b1d3;
   }
+
+  .feature-4 {
+    height: 100vh;
+    background-image: url("./Assets/blackhole-1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .button-4 {
+    color: whitesmoke;
+    margin-top: 1.2rem;
+    display: inline-flex;
+    max-width: 200px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .85rem;
+    letter-spacing: .1rem;
+    opacity: 1;
+    border: 2px solid #7821b1d3;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background-position: 100px, 200px;
+    backface-visibility: hidden;
+    cursor: pointer;
+    background-image: url("./Assets/blackhole-1.jpg");            
+      }
+
+    .button-4:hover {
+    color: #7821b1d3;
+    }
   
   footer {
   background: black;
