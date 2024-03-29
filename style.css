@@ -1,213 +1,248 @@
 html {
-    height: 100%;
-    width: 100%;
-    text-decoration-color: white;
-  }
-  img{
-    max-width: 100vw;
-  }
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    color: #7821b1d3;
-    margin: 0;
-    padding: 20px;
-    position: fixed;
-    top: 30;
-    left: 100;
-    font-family: sans-serif;
-    z-index: 100;
-  }
+height: 100%;
+width: 100%;
+text-decoration-color: white;
+}
 
-  top
+img{
+max-width: 100vw;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+#pp-page {
+background-image: url("./Assets/blackhole-2.jpg");
+background-size: cover;
+}
+
+header {
+color: #7821b1d3;
+margin: 10;
+padding: 20px;
+position: fixed;
+top: 30;
+left: 100;
+font-family: sans-serif;
+z-index: 100;
+font-size: x-large;
+}
  
-  header a{
+header a{
 color: whitesmoke;
 }
 
-.game{
-  color: gold;
+nav {
+display: flex;
+gap: 2.3rem;
+text-transform: uppercase;
+align-items: center;
+top: 30;
+right: 200;
+cursor: pointer;
 }
 
-  nav {
-  display: flex;
-  gap: 2.3rem;
-  text-transform: uppercase;
-  align-items: center;
-  top: 30;
-  right: 200;
-  cursor: pointer;
-  }
-
- nav a{
-    text-decoration: none;
-    font-size: .85rem;
-    font-weight: 700;
-    position: static;
-    color: whitesmoke;
-    text-decoration-style: solid;
-    text-decoration-thickness: auto;
-    text-decoration-color: #840ad6e0;
-  }
-
-  .nav-titles:hover {
-  text-decoration: underline;
-  color: #840ad6e0;
-  }
+nav a{
+text-decoration: none;
+font-size: .85rem;
+font-weight: 700;
+position: static;
+color: whitesmoke;
+text-decoration-style: solid;
+text-decoration-thickness: auto;
+text-decoration-color: #840ad6e0;
+}
 
 
+.nav-titles:hover {
+text-decoration: underline;
+text-decoration-color: #7821b1d3;
+}
 
-  .title {
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-  }
-  main {
-    margin: 0;
-    padding: 0px;
-  }
+.nav-game{
+color: gold;
+}
+
+.nav-game:hover {
+text-decoration: underline;
+text-decoration-color: #7821b1d3;
+}
+
+
+.title {
+position: absolute;
+bottom: 50px;
+left: 50px;
+}
+
+main {
+margin: 0;
+padding: 0px;
+}
+
+#ppFeature-1 {
+background-image: url("./Assets/blackhole-2.jpg");
+}
 
 h2 {
-    font-size: x-large;
+font-size: x-large;
+margin: 0;
+padding: 0;
 }
 
 h3 {
-    font-size: xx-large;
+font-size: xx-large;
+margin: 200;
+padding: 0;
 }
   
-  .title{
-    color:#7821b1d3;
-  }
+.title{
+color:#7821b1d3;
+}
 
-  section{
-    position: relative;
-  }
+section{
+position: relative;
+}
   
-  .feature-1 {
-    height: 100vh;
-    background-image: url("./Assets/galaxy.jpg");
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
+.feature-1 {
+height: 100vh;
+background-image: url("./Assets/galaxy.jpg");
+background-size: cover;
+background-position: center;
+position: relative;
+}
   
-  .button-1 {
-  color: whitesmoke;
-  margin-top: 1.2rem;
-  display: inline-block;
-  max-width: 200px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: .85rem;
-  letter-spacing: .1rem;
-  opacity: 1;
-  border: 3px solid #7821b1d3;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  background-position: 10px, 20px;
-  cursor: pointer;
-  background-image: url("./Assets/galaxy.jpg");           
-    }
+.button-1 {
+color: whitesmoke;
+margin-top: 1.2rem;
+display: inline-block;
+max-width: 200px;
+text-transform: uppercase;
+font-weight: 700;
+font-size: .85rem;
+letter-spacing: .1rem;
+opacity: 1;
+border: 3px solid #7821b1d3;
+padding: 1rem 2rem;
+text-decoration: none;
+cursor: pointer;
+background-position: 10px, 20px;
+background-image: url("./Assets/purple-space.jpg");
+background-size: cover;
+}
 
-    .button-1:hover {
-    color: #7821b1d3;
-    }
+.button-1:hover {
+color: gold;
+}
   
-  .feature-2 {
-    height: 100vh;
-    background-image: url("./Assets/landscape.jpg");
-    background-size: cover;
-    background-position: center;
-  }
+.feature-2 {
+height: 100vh;
+background-image: url("./Assets/landscape.jpg");
+background-size: cover;
+background-position: center;
+position: relative;
+}
 
-  .button-2 {
-  color: whitesmoke;
-  margin-top: 1.2rem;
-  display: inline-block;
-  max-width: 200px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: .85rem;
-  letter-spacing: .1rem;
-  opacity: 1;
-  border: 4px solid #7821b1d3;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  background-position: 10px, 20px;
-  cursor: pointer;
-  background-image: url("./landscape.jpg");          
-    }
+.button-2 {
+color: whitesmoke;
+margin-top: 1.2rem;
+display: inline-block;
+max-width: 200px;
+text-transform: uppercase;
+font-weight: 700;
+font-size: .85rem;
+letter-spacing: .1rem;
+opacity: 1;
+border: 4px solid #7821b1d3;
+padding: 1rem 2rem;
+background-position: 10px, 20px;
+position: relative;
+cursor: pointer;
+background-image: url("./Assets/purple-space.jpg");
+background-size: cover;         
+}
   
-    .button-2:hover {
-    color: #7821b1d3;
-    }
+.button-2:hover {
+color: gold;
+}
 
-  .feature-3 {
-    height: 100vh;
-    background-image: url("./Assets/eclipse.jpg");
-    background-size: cover;
-    background-position: center;
-  }
+.feature-3 {
+height: 100vh;
+background-image: url("./Assets/eclipse.jpg");
+background-size: cover;
+background-position: center;
+}
 
-  .button-3 {
-  color: whitesmoke;
-  margin-top: 1.2rem;
-  display: inline-block;
-  max-width: 200px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: .85rem;
-  letter-spacing: .1rem;
-  opacity: 1;
-  border: 2px solid #7821b1d3;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  background-position: 10px, 20px;
-  cursor: pointer;
-  background-image: url("./Assets/eclipse.jpg");            
-    }
+.button-3 {
+color: whitesmoke;
+margin-top: 1.2rem;
+display: inline-block;
+max-width: 200px;
+text-transform: uppercase;
+font-weight: 700;
+font-size: .85rem;
+letter-spacing: .1rem;
+opacity: 1;
+border: 2px solid #7821b1d3;
+padding: 1rem 2rem;
+text-decoration: none;
+background-position: 10px, 20px;
+position: relative;
+cursor: pointer;
+background-image: url("./Assets/purple-space.jpg");
+background-size: cover;        
+}
 
-  .button-3:hover {
-  color: #7821b1d3;
-  }
+.button-3:hover {
+color: gold;
+}
 
-  .feature-4 {
-    height: 100vh;
-    background-image: url("./Assets/blackhole-1.jpg");
-    background-size: cover;
-    background-position: center;
-  }
+.feature-4 {
+height: 100vh;
+background-image: url("./Assets/blackhole-1.jpg");
+background-size: cover;
+background-position: center;
+}
 
 
-  .button-4 {
-    color: whitesmoke;
-    margin-top: 1.2rem;
-    display: inline-flex;
-    max-width: 200px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: .85rem;
-    letter-spacing: .1rem;
-    opacity: 1;
-    border: 2px solid #7821b1d3;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    background-position: 100px, 200px;
-    backface-visibility: hidden;
-    cursor: pointer;
-    background-image: url("./Assets/blackhole-1.jpg");            
-      }
+.button-4 {
+color: whitesmoke;
+margin-top: 1.2rem;
+display: inline-block;
+max-width: 200px;
+text-transform: uppercase;
+font-weight: 700;
+font-size: .85rem;
+letter-spacing: .1rem;
+opacity: 1;
+border: 2px solid #7821b1d3;
+padding: 1rem 2rem;
+text-decoration: none;
+background-position: 10px, 20px;
+position: relative;
+cursor: pointer;
+background-image: url("./Assets/purple-space.jpg");
+background-size: cover;          
+}
 
-    .button-4:hover {
-    color: #7821b1d3;
-    }
+.button-4:hover {
+color: gold;
+}
   
-  footer {
-  background: black;
-  text-align: center;
-  color: #7821b1d3;
-  padding: 40px;
-  font-style: italic;
+footer {
+background: black;
+text-align: center;
+color: #7821b1d3;
+padding: 20px;
+font-style: italic;
+}
+
+#pp-footer {
+background: black;
+text-align: center;
+color: #7821b1d3;
+padding: 20px;
+font-style: italic;
 }
