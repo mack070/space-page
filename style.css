@@ -13,10 +13,7 @@ margin: 0;
 padding: 0;
 }
 
-#pp-page {
-background-image: url("./Assets/blackhole-2.jpg");
-background-size: cover;
-}
+
 
 header {
 color: #7821b1d3;
@@ -61,6 +58,11 @@ text-decoration: underline;
 text-decoration-color: #7821b1d3;
 }
 
+.pp-nav-titles:hover {
+text-decoration: underline;
+text-decoration-color: #7821b1d3;
+}
+
 .nav-game{
 color: gold;
 }
@@ -75,6 +77,7 @@ text-decoration-color: #7821b1d3;
 position: absolute;
 bottom: 50px;
 left: 50px;
+color:#7821b1d3;
 }
 
 main {
@@ -82,8 +85,33 @@ margin: 0;
 padding: 0px;
 }
 
+#pp-main {
+    margin: 0;
+    padding: 0px;
+    }
+
 #ppFeature-1 {
 background-image: url("./Assets/blackhole-2.jpg");
+height: 100vh;
+background-size: cover;
+background-position: center;
+position: relative;
+text-decoration-style: solid;
+text-decoration-thickness: auto;
+}
+
+#ppFeature-2 {
+background-image: url("./Assets/black-space-1.jpg");
+height: 100vh;
+background-size: cover;
+background-position: center;
+position: relative;
+}
+
+p {
+font-size: x-large;
+margin: 0;
+padding: 0;
 }
 
 h2 {
@@ -96,10 +124,6 @@ h3 {
 font-size: xx-large;
 margin: 200;
 padding: 0;
-}
-  
-.title{
-color:#7821b1d3;
 }
 
 section{
@@ -217,14 +241,13 @@ font-weight: 700;
 font-size: .85rem;
 letter-spacing: .1rem;
 opacity: 1;
-border: 2px solid #7821b1d3;
+border: 3px solid #7821b1d3;
 padding: 1rem 2rem;
 text-decoration: none;
-background-position: 10px, 20px;
-position: relative;
 cursor: pointer;
+background-position: 10px, 20px;
 background-image: url("./Assets/purple-space.jpg");
-background-size: cover;          
+background-size: cover;   
 }
 
 .button-4:hover {
@@ -234,14 +257,7 @@ color: gold;
 footer {
 background: black;
 text-align: center;
-color: #7821b1d3;
-padding: 20px;
-font-style: italic;
-}
-
-#pp-footer {
-background: black;
-text-align: center;
+text-shadow: crimson;
 color: #7821b1d3;
 padding: 20px;
 font-style: italic;
