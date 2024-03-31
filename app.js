@@ -1,15 +1,12 @@
-// console.log('Hello World');
-// prompt("Do you like space?");
-// if("yes")alert("Great, then you've come to the right place");
-// else("Oh well, hope to see you again!");
+const moonButton = document.getElementById("MoonButton");
+const planetButton = document.getElementById("planetButton")
+const sunButton = document.getElementById("sunButton")
+const galaxyButton = document.getElementById("galaxyButton")
+const upgradeButton = document.getElementById("upgradeButton")
+const planetsSpan = document.getElementById("planetsSpan")
+const ppsSpan = document.getElementById("ppsSpan")
 
-const button = document.querySelector("button");
-button.addEventListener("click", function(){
-    console.log("button click");
-})
-
-const counterButton = document.getElementById("counter-button");
-let count = 0;
-id= counterButton.addEventListener("click", function () {
-console.log(count += 1)
-});
+const stats = {
+planetsCount: 0;
+stats: 0;
+}

@@ -85,11 +85,6 @@ margin: 0;
 padding: 0px;
 }
 
-#pp-main {
-    margin: 0;
-    padding: 0px;
-    }
-
 #ppFeature-1 {
 background-image: url("./Assets/blackhole-1.jpg");
 height: 100vh;
@@ -107,6 +102,21 @@ height: 100vh;
 background-size: cover;
 background-position: center;
 position: relative;
+}
+
+#h2-mission {
+color: gold;
+text-shadow: whitesmoke;
+}
+
+#pp-p1 {
+color: #7821b1d3;
+text-shadow: whitesmoke;
+}
+
+#pp-p2 {
+color: #7821b1d3;
+text-shadow: whitesmoke;
 }
 
 p {
