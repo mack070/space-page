@@ -23,6 +23,14 @@ planetsCount: 0,
 pps: 0, // Planets Per Second
 };
 
+const storageStats = JSON.parse(localStorage.getItem("stats"));
+
+if (storageStats !== null) {
+stats.planetsCount = storageStats.planetsCount;
+stats.pps = storageStats.pps;
+updatePage();
+}
+
 function savePlanet() {
 stats.planetsCount++;
 updatePage();
