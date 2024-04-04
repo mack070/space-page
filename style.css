@@ -119,6 +119,16 @@ color: #7821b1d3;
 text-shadow: whitesmoke;
 }
 
+#thumb-container img {
+height: 100px;
+width: auto;
+}
+  
+.largeThumb-image img {
+max-width: 100vw;
+max-height: 100vh;
+}
+
 p {
 font-size: x-large;
 margin: 10;
