@@ -104,6 +104,17 @@ background-position: center;
 position: relative;
 }
 
+#sgFeature-1 {
+    background-image: url("./Assets/black-space-2.webp");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    font-style: italic;
+    }
+
 #h2-mission {
 color: gold;
 text-shadow: whitesmoke;
