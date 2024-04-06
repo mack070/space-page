@@ -11,7 +11,166 @@ max-width: 100vw;
 body {
 margin: 0;
 padding: 0;
+color: white;
+background-color: black;
+box-sizing: border-box;
 }
+
+#display img {
+width: 100%;
+height: 100vh;
+overflow: hidden;
+object-fit: cover;
+}
+
+button {
+border: 2px solid;
+border-radius: 100%;
+background-color: ;
+color: #7821b1d3;
+padding: 6px 10px;
+z-index: 100;
+cursor: pointer;
+}
+
+button#next {
+position: absolute;
+top: 50vh;
+right: 5vw;
+}
+
+button#prev{
+position: absolute;
+top: 50vh;
+left: 5vw;
+}
+
+.thumb-image {
+height: 100px;
+width: auto;
+padding: 2px;
+cursor: pointer;
+}
+
+.thumb-container {
+height: 60px;
+width: auto;
+display: flex;
+position: absolute;
+justify-content: center;
+align-items: center;
+z-index: 100;
+background-color: black;
+bottom: 3vh;
+left: 50%; 
+padding-left: 5px;
+padding-right: 5px;
+border-radius: 4px;
+backdrop-filter: blur(5px);
+transform: translateX(-50%); 
+overflow: scroll;
+}
+
+.description-container {
+position: absolute;
+height: 50vh;
+width: 20vw;
+z-index: 100;
+background: rgb(50, 49, 49);
+backdrop-filter: blur(5px);
+}
+
+.thumbContainerHideButton{
+bottom: 13vh;
+width: auto;
+padding: 10px 10px;
+height: auto;
+transition: bottom 0.4s
+}
+
+.thumbContainerHideButton-thumbnailsHidden{
+bottom: 8vh;
+}
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+padding: 0;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+border: 0;
+}
+
+
+.hidden {
+display: none;
+}
+
+@media (width >= 600px) {
+.description-container {
+height: 80px;
+width: 500px;
+position: absolute;
+}
+
+.thumb-container {
+flex-direction: column;
+flex-wrap: wrap;
+height: 90px;
+width: 400px;
+position: absolute;
+top: 3vh;
+bottom: auto;
+overflow: scroll;
+}
+
+#thumb-container img {
+height: 100px;
+width: auto;
+}
+
+.thumb-image {
+width: 110px;
+height: 75px;
+padding: 1px;
+cursor: pointer;
+flex-shrink: 0;
+}
+
+.thumbContainerHideButton {
+top: 17vh;
+bottom: auto;
+width: auto;
+padding: 0px 7px 1px 7px;
+transition: top 0.4s;
+height: auto;
+content: '↓';
+}
+
+.thumbContainerHideButton-thumbnailsHidden{
+top: 4vh;
+}
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+padding: 0;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+border: 0;
+}
+
+.large-image img {
+max-width: 100vw;
+max-height: 100vh;
+}
+    
+}
+
 
 
 
@@ -115,6 +274,19 @@ position: relative;
     font-style: italic;
     }
 
+#sgFeature-2 {
+background-image: url("");
+height: 100vh;
+border-top: #7821b1d3;
+background-size: cover;
+background-position: center;
+position: relative;
+text-decoration-style: solid;
+text-decoration-thickness: auto;
+font-style: italic;
+}
+
+
 #h2-mission {
 color: gold;
 text-shadow: whitesmoke;
@@ -128,11 +300,6 @@ text-shadow: whitesmoke;
 #pp-p2 {
 color: #7821b1d3;
 text-shadow: whitesmoke;
-}
-
-#thumb-container img {
-height: 100px;
-width: auto;
 }
   
 .largeThumb-image img {

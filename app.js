@@ -69,86 +69,90 @@ localStorage.setItem("stats", JSON.stringify(stats))
 }
 
 
-
-const thumbImage = document.getElementById("thumb-image");
+// Space Gallery JavaScript Code
+const thumbContainer = document.getElementById("thumb-container");
 const displayImage = document.getElementById("display");
 
 let imageIndex = 0; // this currently does nothing, but is a start
 
 const images = [
-  {
-    url: "https://images.unsplash.com/photo-1590346320751-876ff414c050?q=80&w=2086&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Space-1",
-  },
+{
+url: "https://unsplash.com/photos/purple-and-black-galaxy-illustration-uXchDIKs4qI",
+alt: "A beautiful purple and black galaxy",
+title: "Purple Galaxy"
+},
 
-  {
-    url: "https://images.unsplash.com/photo-1616529927764-173a543493ee?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "space-2",
-  },
+{
+url: "https://unsplash.com/photos/blue-and-black-galaxy-digital-wallpaper-qtRF_RxCAo0",
+alt: "Rainbow Galaxy",
+},
 
-  {
-    url: "https://images.unsplash.com/photo-1624806992221-12d8062c35e5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "space-3",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1590346320751-876ff414c050?q=80&w=2086&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Space-4",
-  },
+{
+url: " ",
+alt: "space-3",
+},
 
-  {
-    url: "https://images.unsplash.com/photo-1616529927764-173a543493ee?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "space-5",
-  },
+{
+url: " ",
+alt: "Space-4",
+},
 
-  {
-    url: "https://images.unsplash.com/photo-1624806992221-12d8062c35e5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "space-6",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1590346320751-876ff414c050?q=80&w=2086&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Space-7",
-  },
+{
+url: " ",
+alt: "space-5",
+},
 
-  {
-    url: "https://images.unsplash.com/photo-1616529927764-173a543493ee?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "space-8",
-  },
+{
+url: " ",
+alt: "space-6",
+},
 
-  {
-    url: "https://images.unsplash.com/photo-1624806992221-12d8062c35e5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "space-9",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1624806992221-12d8062c35e5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "space-10",
-  },
+{
+url: " ",
+alt: "Space-7",
+},
+
+{
+url: " ",
+alt: "space-8",
+},
+
+{
+url: " ",
+alt: "space-9",
+},
+
+{
+url: " ",
+alt: "space-10",
+},
 ];
 
 function createThumbnails() {
-  images.forEach(function (image) {
-    const img = document.createElement("img");
+images.forEach(function (image) {
+const img = document.createElement("img");
 
-    img.src = image.url;
-    img.alt = image.alt;
+img.src = image.url;
+img.alt = image.alt;
 
-    thumbImage.appendChild(img);
+thumbContainer.appendChild(img);
 
-    img.addEventListener("click", function () {
-      createBigImage(image);
-    });
-  });
+img.addEventListener("click", function () {
+createBigImage(image);
+});
+});
 }
 
 
 function createBigImage(image) {
-  displayImage.innerHTML = "";
+displayImage.innerHTML = "";
 
-  const bigImg = document.createElement("img");
+const bigImg = document.createElement("img");
 
-  bigImg.src = image.url;
-  bigImg.alt = image.alt;
+bigImg.src = image.url;
+bigImg.alt = image.alt;
 
-  displayImage.appendChild(bigImg);
+displayImage.appendChild(bigImg);
 }
 
 createThumbnails();
