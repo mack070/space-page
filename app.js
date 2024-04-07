@@ -120,6 +120,7 @@ const img = document.createElement("img");
 
 img.src = image.url;
 img.alt = image.alt;
+
   
 
 thumbContainer.appendChild(img);
@@ -129,6 +130,8 @@ createBigImage(image);
 });
 });
 }
+
+const sgFeature1 = document.getElementById("sgFeature-1")
   
 function createBigImage(image) {
 displayImage.innerHTML = "";
